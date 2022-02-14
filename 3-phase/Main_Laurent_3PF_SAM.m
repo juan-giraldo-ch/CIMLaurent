@@ -1,8 +1,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Code by Juan S. Giraldo - jnse@ieee.org - University of Twente, NL
+% Code by Juan S. Giraldo - jnse@ieee.org 
+% 02/2022 - EEMCS, University of Twente, NL
 % 3Ph-Power flow using Laurent series expansion
 %Please cite reference [A] when publishing results based on this algorithm.
-%[A] Juan S. Giraldo, Oscar D. Montoya, Pedro P. Vergara, and Federico Milano, "A Fixed-Point Current Injection Power Flow forElectric Distribution Systems using Laurent Series", Electric Power Systems Research 
+%[A] Juan S. Giraldo, Oscar D. Montoya, Pedro P. Vergara, and Federico Milano, "A Fixed-Point Current Injection Power Flow forElectric Distribution Systems using Laurent Series", Electric Power Systems Research
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 clear all;
@@ -12,7 +13,7 @@ clc;
 
 
 Vb = 4.16/sqrt(3); % kV phase base voltage
-Sbase = 1000.0/3; % kVA 3phase base apparent power
+Sbase = 1000.0/3; % kVA base apparent power
 
 System_Data_Nodes = readmatrix('Nodes_34_3Ph.csv');
 System_Data_Lines = readmatrix('Lines_34_3Ph.csv');
