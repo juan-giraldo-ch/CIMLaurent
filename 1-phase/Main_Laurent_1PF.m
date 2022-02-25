@@ -11,16 +11,17 @@ clc;
 %% Import data
 
 
-Vb = 11.0; % kV phase base voltage
-Sbase = 100000.0; % kVA 1phase base apparent power
+Vb = 11; % kV phase base voltage
+Sbase = 1000.0; % kVA 1phase base apparent power
 
 
 System_Data_Lines = readmatrix('Lines_136.csv');
 System_Data_Nodes = readmatrix('Nodes_136.csv');
+% System_Data_Nodes = readmatrix('Nodes_33_laurent.csv');
+% System_Data_Lines = readmatrix('Lines_33_laurent.csv');
 
-
-System_Data_Lines(:,3:4) = System_Data_Lines(:,3:4);%*1/(Vb^2*1000/Sbase);
-System_Data_Lines(:,5) = System_Data_Lines(:,5);%*(Vb^2*1000/Sbase);
+System_Data_Lines(:,3:4) = System_Data_Lines(:,3:4)*1/(Vb^2*1000/Sbase);%*1/(Vb^2*1000/Sbase);
+System_Data_Lines(:,5) = System_Data_Lines(:,5)*(Vb^2*1000/Sbase);%*(Vb^2*1000/Sbase);
 
 
 %% Make Ybus
