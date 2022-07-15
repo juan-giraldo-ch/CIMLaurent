@@ -7,4 +7,4 @@ Code by Juan S. Giraldo - jnse@ieee.org
 
 Please cite reference [A] when publishing results based on this algorithm.
 
-[A] Juan S. Giraldo, Oscar D. Montoya, Pedro P. Vergara, and Federico Milano, "A Fixed-Point Current Injection Power Flow forElectric Distribution Systems using Laurent Series", Electric Power Systems Research
+[A] Juan S. Giraldo, Oscar D. Montoya, Pedro P. Vergara, and Federico Milano, "A Fixed-Point Current Injection Power Flow forElectric Distribution Systems using Laurent Series", Electric Power Systems Research, DOI: https://doi.org/10.1016/j.epsr.2022.108326.
